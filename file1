@@ -1,0 +1,11 @@
+public class Palindrome {
+    public static boolean isPalindrome(String word) {
+        word = word.toLowerCase();
+        StringBuilder reversedWord = new StringBuilder(word).reverse();
+        return word.equals(reversedWord.toString());
+    }
+
+    public static void main(String[] args) {
+        System.out.println(isPalindrome("Racecar"));
+    }
+}
